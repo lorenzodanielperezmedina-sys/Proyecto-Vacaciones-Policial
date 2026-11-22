@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ausencia.cs" />
+    <Compile Include="Bitacora.cs" />
+    <Compile Include="CalculoDias.cs" />
+    <Compile Include="Cargo.cs" />
+    <Compile Include="Departamento.cs" />
+    <Compile Include="Estados.cs" />
+    <Compile Include="EstadoSolicitud.cs" />
+    <Compile Include="Feriado.cs" />
+    <Compile Include="HistorialAprobacion.cs" />
+    <Compile Include="Licencia.cs" />
+    <Compile Include="Permiso.cs" />
+    <Compile Include="Personal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rango.cs" />
+    <Compile Include="Rol.cs" />
+    <Compile Include="SaldoVacaciones.cs" />
+    <Compile Include="SolicitudAusencia.cs" />
+    <Compile Include="TipoAusencia.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Vacacion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
