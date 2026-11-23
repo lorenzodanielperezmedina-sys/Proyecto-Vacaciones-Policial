@@ -42,13 +42,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AusenciaDAL.cs" />
+    <Compile Include="BitacoraDAL.cs" />
+    <Compile Include="CargoDAL.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DepartamentoDAL.cs" />
+    <Compile Include="EstadoSolicitudDAL.cs" />
+    <Compile Include="FeriadoDAL.cs" />
+    <Compile Include="HistorialAprobacionDAL.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="PersonalDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangoDAL.cs" />
+    <Compile Include="RepositorioBase.cs" />
+    <Compile Include="RolDAL.cs" />
+    <Compile Include="SaldoVacacionesDAL.cs" />
+    <Compile Include="SolicitudDAL.cs" />
+    <Compile Include="TipoAusenciaDAL.cs" />
+    <Compile Include="UsuarioDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{5654975a-5677-4794-baa8-169f4f8cb4e3}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Datos.dll" />
+    <Content Include="bin\Debug\Datos.pdb" />
+    <Content Include="bin\Debug\Entidades.dll" />
+    <Content Include="bin\Debug\Entidades.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
