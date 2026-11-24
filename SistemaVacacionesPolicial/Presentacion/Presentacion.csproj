@@ -66,6 +66,18 @@
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmmantenimientocatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmantenimientocatalogo.Designer.cs">
+      <DependentUpon>frmmantenimientocatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmantenimientoPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmantenimientoPersonal.Designer.cs">
+      <DependentUpon>frmmantenimientoPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmantenimientocatalogo.resx">
+      <DependentUpon>frmmantenimientocatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmantenimientoPersonal.resx">
+      <DependentUpon>frmmantenimientoPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
