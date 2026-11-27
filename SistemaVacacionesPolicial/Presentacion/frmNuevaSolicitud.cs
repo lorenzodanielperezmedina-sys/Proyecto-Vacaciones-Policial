@@ -27,11 +27,11 @@ namespace Presentacion
                 bool hayError = false;
 
                 // Si no se selecciona un miembro muestra error.
-                if (cmbMiembro.SelectedIndex == -1)
+                if (txtMiembro.Text == "")
                 {
                     errorProvider1.SetError(
-                        cmbMiembro,
-                        "Debe seleccionar un miembro.");
+                        txtMiembro,
+                        "Debe ingresar el nombre del miembro.");
 
                     hayError = true;
                 }
@@ -147,7 +147,7 @@ namespace Presentacion
         {
 
             // Limpiar los campos de selección
-            cmbMiembro.SelectedIndex = -1;
+            txtMiembro.Text = "";
             cmbTipoAusencia.SelectedIndex = -1;
 
             // Restablecer las fechas
@@ -165,7 +165,7 @@ namespace Presentacion
             lblreincorporacion.Text = "";
 
             // Colocar el cursor en el primer campo
-            cmbMiembro.Focus();
+            txtMiembro.Focus();
         }
     }
 }
