@@ -129,12 +129,14 @@
             this.saldoDeVacacionesToolStripMenuItem.Name = "saldoDeVacacionesToolStripMenuItem";
             this.saldoDeVacacionesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saldoDeVacacionesToolStripMenuItem.Text = "Catálogos";
+            this.saldoDeVacacionesToolStripMenuItem.Click += new System.EventHandler(this.saldoDeVacacionesToolStripMenuItem_Click);
             // 
             // saldoDeVacacionesToolStripMenuItem1
             // 
             this.saldoDeVacacionesToolStripMenuItem1.Name = "saldoDeVacacionesToolStripMenuItem1";
             this.saldoDeVacacionesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.saldoDeVacacionesToolStripMenuItem1.Text = "Saldo de vacaciones";
+            this.saldoDeVacacionesToolStripMenuItem1.Click += new System.EventHandler(this.saldoDeVacacionesToolStripMenuItem1_Click);
             // 
             // solicitudesToolStripMenuItem
             // 
@@ -180,6 +182,7 @@
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // ausentesYReincorporacionesToolStripMenuItem
             // 
@@ -280,6 +283,7 @@
             this.tsbReportes.Name = "tsbReportes";
             this.tsbReportes.Size = new System.Drawing.Size(81, 28);
             this.tsbReportes.Text = "Reportes";
+            this.tsbReportes.Click += new System.EventHandler(this.tsbReportes_Click);
             // 
             // tsbCambiarClave
             // 
@@ -307,7 +311,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPrincipal";
             this.Text = "SIGVLP";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
