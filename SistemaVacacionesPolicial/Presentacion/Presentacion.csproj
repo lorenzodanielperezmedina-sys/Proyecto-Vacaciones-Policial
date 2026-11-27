@@ -60,11 +60,23 @@
     <Compile Include="FormularioBase.Designer.cs">
       <DependentUpon>FormularioBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBandejaAprobacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBandejaAprobacion.Designer.cs">
+      <DependentUpon>frmBandejaAprobacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaSolicitud.Designer.cs">
+      <DependentUpon>frmNuevaSolicitud.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -77,6 +89,12 @@
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteAusencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteAusencia.Designer.cs">
+      <DependentUpon>frmReporteAusencia.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsuarios.cs">
       <SubType>Form</SubType>
@@ -101,14 +119,23 @@
     <EmbeddedResource Include="FormularioBase.resx">
       <DependentUpon>FormularioBase.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBandejaAprobacion.resx">
+      <DependentUpon>frmBandejaAprobacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaSolicitud.resx">
+      <DependentUpon>frmNuevaSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteAusencia.resx">
+      <DependentUpon>frmReporteAusencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsuarios.resx">
       <DependentUpon>frmUsuarios.cs</DependentUpon>

@@ -87,5 +87,71 @@ namespace Presentacion
         {
 
         }
+
+        private void tsbNuevaSolicitud_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmNuevaSolicitud)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de Nueva Solicitud
+            frmNuevaSolicitud objNuevaSolicitud = new frmNuevaSolicitud();
+
+            //Establecer el MDI parent 
+            objNuevaSolicitud.MdiParent = this;
+
+
+            //Acceder al formulario de Nueva Solicitud
+            objNuevaSolicitud.Show();
+        }
+
+        private void nuevaSolicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmNuevaSolicitud)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de Nueva Solicitud
+            frmNuevaSolicitud objNuevaSolicitud = new frmNuevaSolicitud();
+
+            //Establecer el MDI parent 
+            objNuevaSolicitud.MdiParent = this;
+
+
+            //Acceder al formulario de Nueva Solicitud
+            objNuevaSolicitud.Show();
+        }
+
+        private void bandejaDeAprobaciónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmBandejaAprobacion)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de Bandeja de Aprobacion
+            frmBandejaAprobacion objBandejaAprobacion = new frmBandejaAprobacion();
+
+            //Establecer el MDI parent 
+            objBandejaAprobacion.MdiParent = this;
+
+
+            //Acceder al formulario de bandeja de Aprobacion
+            objBandejaAprobacion.Show();
+        }
     }
 }
