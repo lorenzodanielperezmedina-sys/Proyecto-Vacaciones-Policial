@@ -42,7 +42,24 @@ namespace Presentacion
 
         private void catálogosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmmantenimientoPersonal)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
 
+            //Crear Objeto del formulario de mantenimiento de catalogo
+            frmmantenimientoPersonal objmantenimientoPersonal = new frmmantenimientoPersonal();
+
+            //Establecer el MDI parent 
+            objmantenimientoPersonal.MdiParent = this;
+
+
+            //Acceder al formulario de mantenimiento de catalogo
+            objmantenimientoPersonal.Show();
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -152,6 +169,77 @@ namespace Presentacion
 
             //Acceder al formulario de bandeja de Aprobacion
             objBandejaAprobacion.Show();
+        }
+
+        private void tsbReportes_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmReporteAusencia)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de reporte de Ausencias
+            frmReporteAusencia objReporteAusencia = new frmReporteAusencia();
+
+            //Establecer el MDI parent 
+            objReporteAusencia.MdiParent = this;
+
+
+            //Acceder al formulario de reporte de Ausencias
+            objReporteAusencia.Show();
+        }
+
+        private void saldoDeVacacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmmantenimientocatalogo)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de reporte de Ausencias
+            frmmantenimientocatalogo objmantenimientocatalogo = new frmmantenimientocatalogo();
+
+            //Establecer el MDI parent 
+            objmantenimientocatalogo.MdiParent = this;
+
+
+            //Acceder al formulario de reporte de Ausencias
+            objmantenimientocatalogo.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form formulario in this.MdiChildren)
+            {
+                if (formulario is frmReporteAusencia)
+                {
+                    formulario.Activate();
+                    return;
+                }
+            }
+
+            //Crear Objeto del formulario de reporte de Ausencias
+            frmReporteAusencia objReporteAusencia = new frmReporteAusencia();
+
+            //Establecer el MDI parent 
+            objReporteAusencia.MdiParent = this;
+
+
+            //Acceder al formulario de reporte de Ausencias
+            objReporteAusencia.Show();
+        }
+
+        private void saldoDeVacacionesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
